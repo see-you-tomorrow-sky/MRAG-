@@ -1,0 +1,29 @@
+{
+  "models": {
+    "embedding": "./models/bge-small-zh-v1.5-f16.gguf",
+    "generation": "./models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "n_gpu_layers": 99
+  },
+  "document": {
+    "chunk_size": 1500,
+    "overlap_size": 150
+  },
+  "retrieval": {
+    "top_k": 5,
+    "show_recalled_chunks": true
+  },
+  "generation": {
+    "n_ctx": 8192,
+    "n_batch": 8192,
+    "n_ubatch": 512,
+    "max_output_tokens": 1024,
+    "temperature": 0.3,
+    "top_k": 40,
+    "top_p": 0.9
+  },
+  "embedding": {
+    "n_ctx": 1024,
+    "n_batch": 1024,
+    "n_ubatch": 1024
+  }
+}

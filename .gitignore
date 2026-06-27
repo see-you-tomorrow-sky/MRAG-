@@ -1,0 +1,37 @@
+# Build directories
+build/
+build-cuda/
+
+# Model files (large binaries)
+models/
+*.gguf
+
+# Database and data files
+*.mrag
+*.txt
+*.pdf
+
+# IDE
+.vscode/
+.idea/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# CMake generated
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+compile_commands.json
+Makefile
+_deps/
+
+# Core dumps
+core
+*.core
+
+# Temp files
+*.swp
+*.swo
+*~
